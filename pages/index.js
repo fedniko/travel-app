@@ -1,65 +1,59 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import {MainLayout} from "../components/MainLayout";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <MainLayout>
       <Head>
-        <title>Create Next App</title>
+        <title>Travel App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <section className={styles.intro}>
+            <div className={styles.wrapper}>
+                <h1 className={styles.intro_title}>
+                    Beautiful Places of England
+                </h1>
+                <p className={styles.intro_subtitle}>
+                    Plan your vacation on the most beautiful places of England
+                </p>
+                <form className={styles.search_form}>
+                    <fieldset className={styles.search_form_wrap}>
+                        <h1>Book your vacation</h1>
+                        <p className={styles.search_form_info}>
+                            <label>
+                                Accomodation
+                                <select className={styles.search_form_field} >
+                                    <option>6730 Luna Land North Rhiannonmouth</option>
+                                    <option>6731 Luna Land North Rhiannonmouth</option>
+                                </select>
+                            </label>
+                            <label>
+                                Check-in
+                                <input type={'date'} className={styles.search_form_field}/>
+                            </label>
+                            <label>
+                                Check-out
+                                <input type={'date'} className={styles.search_form_field}/>
+                            </label>
+                            <label>
+                                Guests
+                                <select className={styles.search_form_field}>
+                                    <option>4 adults</option>
+                                    <option>3 adults</option>
+                                    <option>2 adults</option>
+                                    <option>1 adults</option>
+                                </select>
+                            </label>
+                            <button type={'submit'} className={styles.search_form_submit}>Search</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+    </MainLayout>
   )
 }
