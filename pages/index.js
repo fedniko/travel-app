@@ -17,30 +17,30 @@ export default function Home() {
                     Beautiful Places of England
                 </h1>
                 <p className={styles.intro_subtitle}>
-                    Plan your vacation on the most beautiful places of England
+                    Plan your vacation on the most beautiful <br/> places of England
                 </p>
                 <form className={styles.search_form}>
                     <fieldset className={styles.search_form_wrap}>
-                        <h1>Book your vacation</h1>
+                        <h1 className={styles.search_form_title}>Book your vacation</h1>
                         <p className={styles.search_form_info}>
                             <label>
-                                Accomodation
-                                <select className={styles.search_form_field} >
+                                Accommodation
+                                <select className={styles.search_form_field} name={'accommodation'}>
                                     <option>6730 Luna Land North Rhiannonmouth</option>
                                     <option>6731 Luna Land North Rhiannonmouth</option>
                                 </select>
                             </label>
                             <label>
                                 Check-in
-                                <input type={'date'} className={styles.search_form_field}/>
+                                <input type={'date'} className={styles.search_form_field} name={'checkin'}/>
                             </label>
                             <label>
                                 Check-out
-                                <input type={'date'} className={styles.search_form_field}/>
+                                <input type={'date'} className={styles.search_form_field} name={'checkout'}/>
                             </label>
                             <label>
                                 Guests
-                                <select className={styles.search_form_field}>
+                                <select className={styles.search_form_field} name={'guests'}>
                                     <option>4 adults</option>
                                     <option>3 adults</option>
                                     <option>2 adults</option>
@@ -53,6 +53,7 @@ export default function Home() {
                 </form>
             </div>
         </section>
+
       </main>
     </MainLayout>
   )

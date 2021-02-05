@@ -1,4 +1,5 @@
 import Link from "next/link";
+import {SearchIcon} from './icons/SearchIcon'
 import Image from 'next/image';
 import styles from '../styles/Header.module.css'
 
@@ -26,10 +27,8 @@ export function MainLayout({ children }) {
                                 <li className={styles.header_item3}>
                                     <Link href={'#!'}><a className={styles.header_link}>Sign Up</a></Link>
                                 </li>
-                                <li className={styles.header_item}>
-                                    <Link href={'#!'}>
-                                        <Image className={styles.header_link}
-                                               src="/img/search.svg" alt="Search" width={20} height={20}/></Link>
+                                <li className={styles.header_link_icon}>
+                                    <Link href={'#!'}><a className={styles.header_link}><SearchIcon/></a></Link>
                                 </li>
                             </ul>
                             <div className={styles.header_border}/>
