@@ -1,13 +1,18 @@
-.wrapper{
-    max-width: 1440px;
-    margin: 0 auto;
+.main{
+    background: linear-gradient(180deg, #131317 -60.19%, rgba(65, 66, 99, 0.09) 50%), url("../public/img/joseph.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .intro{
-    min-height: 100vh;
-    background-image: linear-gradient(180deg, #131317 -60.19%, rgba(65, 66, 99, 0.09) 50%), url("../public/img/joseph.jpg");
-    background-size: cover;
-    padding-top: 360px;
+    padding-top: 314px;
+    padding-left: 240px;
+    margin-bottom: 569px;
+}
+
+.wrapper{
+    max-width: 1680px;
+    margin: 0 auto;
 }
 
 .intro_title{
@@ -17,6 +22,7 @@
     line-height: 110%;
     letter-spacing: 0.01em;
     margin-bottom: 32px;
+    padding-top: 46px;
 }
 
 .intro_subtitle{
@@ -24,7 +30,48 @@
     font-size: 28px;
     line-height: 150%;
     opacity: 0.8;
-    margin-bottom: 191px;
+}
+
+.places{
+    float: left;
+    width: 50%;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    float: right;
+    width: 50%;
+    max-width: 540px;
+    max-height: 400px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(70px);
+    border-radius: 16px 0px 0px 16px;
+}
+
+.card_title{
+    font-size: 20px;
+    line-height: 20px;
+    opacity: 0.5;
+    padding: 48px 0px 36px 36px;
+    max-width: 169px;
+}
+
+.card_subtitle{
+    font-size: 36px;
+    line-height: 135%;
+    padding-left: 36px;
+    padding-bottom: 87px;
+    max-width: 204px;
+}
+
+.card_arrow{
+    padding-left: 36px
+}
+
+.bottom_form{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .search_form_info{
@@ -53,7 +100,6 @@
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(70px);
     /* Note: backdrop-filter has minimal browser support */
-
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -83,6 +129,3 @@
     color: white;
     border: transparent;
 }
-
-
-
