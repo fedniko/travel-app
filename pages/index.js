@@ -31,7 +31,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className={styles.card_pic}>
-                        <Image src="/img/andrew.png" alt="Picture of the author" width={270} height={400}/>
+                        <Image src="/img/andrew.png" alt="Picture of the author" width={285} height={400}/>
                     </div>
                 </div>
             </div>
@@ -41,29 +41,44 @@ export default function Home() {
                 <fieldset className={styles.search_form_wrap}>
                     <h1 className={styles.search_form_title}>Book your vacation</h1>
                     <p className={styles.search_form_info}>
-                        <label>
-                            Accommodation
-                            <select className={styles.search_form_field} name={'accommodation'}>
-                                <option>6730 Luna Land North Rhiannonmouth</option>
-                                <option>6731 Luna Land North Rhiannonmouth</option>
-                            </select>
+                        <label className={styles.search_accommodation}>
+                            <div className={styles.search_pic}>
+                                <Image src="/img/home.svg" alt="Picture of the author" width={28} height={28}/>
+                            </div>
+                            <div>
+                                <p className={styles.search_form_subtitle}>Accommodation</p>
+                                <select className={styles.search_form_field} name={'accommodation'}>
+                                    <option>6730 Luna Land North Rhiannonmouth</option>
+                                    <option>6731 Luna Land North Rhiannonmouth</option>
+                                </select>
+                            </div>
                         </label>
-                        <label>
-                            Check-in
-                            <input type={'date'} className={styles.search_form_field} name={'checkin'}/>
+                        <label className={styles.search_checkin}>
+                            <div className={styles.search_pic}>
+                                <Image src="/img/calendar.svg" alt="Picture of the author" width={28} height={28}/>
+                            </div>
+                            <div>
+                                <p className={styles.search_form_subtitle}>Check-in</p>
+                                <input type={'date'} className={styles.search_form_field_date} name={'checkin'} defaultValue={'2019-06-19'}/>
+                            </div>
                         </label>
-                        <label>
-                            Check-out
-                            <input type={'date'} className={styles.search_form_field} name={'checkout'}/>
+                        <label className={styles.search_checkout}>
+                            <p className={styles.search_form_subtitle}>Check-out</p>
+                            <input type={'date'} className={styles.search_form_field_date} name={'checkout'} defaultValue={'2019-06-19'}/>
                         </label>
-                        <label>
-                            Guests
-                            <select className={styles.search_form_field} name={'guests'}>
-                                <option>4 adults</option>
-                                <option>3 adults</option>
-                                <option>2 adults</option>
-                                <option>1 adults</option>
-                            </select>
+                        <label className={styles.search_guests}>
+                            <div className={styles.search_pic}>
+                                <Image src="/img/guest.svg" alt="Picture of the author" width={28} height={28}/>
+                            </div>
+                            <div>
+                                <p className={styles.search_form_subtitle}>Guests</p>
+                                <select className={styles.search_form_field2} name={'guests'}>
+                                    <option>4 adults</option>
+                                    <option>3 adults</option>
+                                    <option>2 adults</option>
+                                    <option>1 adults</option>
+                                </select>
+                            </div>
                         </label>
                         <button type={'submit'} className={styles.search_form_submit}>Search</button>
                     </p>
