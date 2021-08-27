@@ -10,27 +10,33 @@ export function MainLayout({ children }) {
                 <div className={styles.wrapper}>
                     <div className={styles.header_wrapper}>
                         <nav className={styles.nav_bar}>
-                            <ul className={styles.header_list}>
-                                <li className={styles.header_item}>
-                                    <Link href={'#!'}><a className={styles.header_link}>About</a></Link>
-                                </li>
-                                <li className={styles.header_item2}>
-                                    <Link href={'#!'}><a className={styles.header_link}>Contact</a></Link>
-                                </li>
-                                <li className={styles.header_item_center}>
-                                    <div className={styles.header_center}><Link href={'/'}>
-                                        <a className={styles.header_link}>Camping.</a></Link></div>
-                                </li>
-                                <li className={styles.header_item}>
-                                    <Link href={'#!'}><a className={styles.header_link}>Sign In</a></Link>
-                                </li>
-                                <li className={styles.header_item3}>
-                                    <Link href={'#!'}><a className={styles.header_link}>Sign Up</a></Link>
-                                </li>
-                                <li className={styles.header_link_icon}>
-                                    <Link href={'#!'}><a className={styles.header_link}><SearchIcon/></a></Link>
-                                </li>
-                            </ul>
+                            <div className={styles.header_list}>
+                                <div className={styles.header__blockLeft}>
+                                    <div className={styles.header_item}>
+                                        <Link href={'#!'}><a className={styles.header_link}>About</a></Link>
+                                    </div>
+                                    <div className={styles.header_item}>
+                                        <Link href={'#!'}><a className={styles.header_link}>Contact</a></Link>
+                                    </div>
+                                </div>
+                                <div className={styles.header__blockCenter}>
+                                    <div className={styles.header_item_center}>
+                                        <div className={styles.header_center}><Link href={'/'}>
+                                            <a className={styles.header_link}>Camping.</a></Link></div>
+                                    </div>
+                                </div>
+                                <div className={styles.header__blockRight}>
+                                    <div className={styles.header_item}>
+                                        <Link href={'#!'}><a className={styles.header_link}>Sign In</a></Link>
+                                    </div>
+                                    <div className={styles.header_item}>
+                                        <Link href={'#!'}><a className={styles.header_link}>Sign Up</a></Link>
+                                    </div>
+                                    <div className={styles.header_link_icon}>
+                                        <Link href={'#!'}><a className={styles.header_link}><SearchIcon/></a></Link>
+                                    </div>
+                                </div>
+                            </div>
                             <div className={styles.header_border}/>
                         </nav>
                     </div>

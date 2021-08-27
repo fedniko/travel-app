@@ -86,7 +86,7 @@ html{
 }
 
 body {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
