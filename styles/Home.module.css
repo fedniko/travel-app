@@ -77,6 +77,7 @@
 }
 
 .bottom_form{
+    padding-top: 100px;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -85,6 +86,10 @@
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(70px);
     border-radius: 20px 20px 0 0;
+}
+
+.search_form input {
+    font-family: "SF Pro Display", sans-serif;
 }
 
 .search_form_title {
