@@ -40,7 +40,7 @@ export default function Home() {
             <form className={styles.search_form}>
                 <fieldset className={styles.search_form_wrap}>
                     <h1 className={styles.search_form_title}>Book your vacation</h1>
-                    <p className={styles.search_form_info}>
+                    <div className={styles.search_form_info}>
                         <label className={styles.search_accommodation}>
                             <div className={styles.search_pic}>
                                 <Image src="/img/home.svg" alt="Picture of the author" width={28} height={28}/>
@@ -81,7 +81,7 @@ export default function Home() {
                             </div>
                         </label>
                         <button type={'submit'} className={styles.search_form_submit}>Search</button>
-                    </p>
+                    </div>
                 </fieldset>
             </form>
         </section>
